@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui">
+    <meta name="referrer" content="no-referrer">
+    <title>xgplayer</title>
+    <style type="text/css">
+      html, body {width:70%;height:100%;margin:auto;overflow: hidden;}
+    </style>
+  </head>
+  <body>
+    <div id="mse"></div>
+    <link rel="stylesheet" href="https://unpkg.byted-static.com/xgplayer/3.0.10/dist/index.min.css"/>
+    <script charset="utf-8" src="https://unpkg.byted-static.com/xgplayer/3.0.10/dist/index.min.js"></script>
+
+       <script>
+        const config = {
+          "id": "mse",
+          "url": "http://localhost:3456/34min.mp4",
+          "poster": 'https://www.ogcloud.net/_nuxt/img/banner_pc_2.7e250b6.webp',
+          "playsinline": true,
+          "plugins": [],
+          "autoplay": true,
+        }
+        
+        let player = new Player(config)
+        
+      </script>  </body>
+</html>
